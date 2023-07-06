@@ -1,0 +1,76 @@
+.mainContainer {
+    display: flex;
+    font-family: system-ui;
+
+}
+
+.navbarContainer {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    padding-left: 4%;
+}
+
+.headingContainer{
+    position: relative;
+    background-image: url("../public/images/fotoEIAD.jpg");
+    background-repeat:no-repeat;
+    background-size:contain;
+    height:580px;width:100%;
+}
+
+.headingContainer.Registro{
+    position: relative;
+    background-repeat:no-repeat;
+    background-size:contain;
+    height:584px;width:100%;
+    background-image: url("../public/images/fotoEIAD.jpg");
+}
+
+.headingContainer.Conocenos{
+    position: relative;
+    background-repeat:no-repeat;
+    background-size:contain;
+    height:590px;width:100%;
+    background-image: url("../public/images/conocenosITESM.jpeg");
+}
+
+.headingContainer.Educacion{
+    position: relative;
+    background-repeat:no-repeat;
+    background-size:contain;
+    height:590px;width:100%;
+    background-image: url("../public/images/educacion_ITESM.jpeg");
+}
+
+.headingContainer.Investigacion{
+    position: relative;
+    background-repeat:no-repeat;
+    background-size:contain;
+    height:590px;width:100%;
+    background-image: url("../public/images/investigacionITESM.png");
+}
+
+
+.button {
+    border: none;
+    color: aliceblue;
+    background-color: transparent;
+    font-size: large;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.logoImage {
+    width: 13%;
+    height: auto;
+    padding-right: 30px ;
+}
+
+.nombre {
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 300%;
+}
