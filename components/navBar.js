@@ -7,6 +7,26 @@ export default function NavBar (props) {
     console.log('Corriendo')
     console.log(props)
 
+    fetch('https://radix.com.mx/reservastec', {
+        method: 'POST',
+        headers: {
+            'Content-Type' : 'application/json',
+        },
+        body: JSON.stringify({ 
+            "id_salon" : 3,
+            "id_mesa" : 1,
+            "usuarios" : ["a01234567", "a98765432"],
+            "id_equipos" : [0],
+            "hora_inicio" : "2022-07-05 16:00:00",
+            "hora_fin"    : "2022-07-05 18:00:00"
+        })
+    }).then(res=> {
+            return res.json()
+        })
+        .then(data => console.log(data))
+        .catch(error => console.log('ERROR'))
+
+
 
     function determinarBackgroundImg(pagina) {
         switch (pagina){
